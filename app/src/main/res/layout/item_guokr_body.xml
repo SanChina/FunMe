@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardCornerRadius="3dp"
+    card_view:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="6dp"
+        android:gravity="center_vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_header_img"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:paddingLeft="8dp"
+                android:src="@drawable/author_img"/>
+
+            <TextView
+                android:id="@+id/tv_source_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="果壳网"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="学习"
+                android:textSize="10sp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginRight="4dp"/>
+        </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="36dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:paddingLeft="8dp"
+        android:paddingBottom="22dp"
+        android:paddingRight="8dp"
+        android:paddingTop="52dp"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="2dp"
+            android:paddingRight="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:maxLines="2"
+                android:text="龙眼+枸杞,是治疗高度近视的最佳拍档?"
+                android:ellipsize="end"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textSize="12sp"
+                android:text="图片来自:heathy.bayvoice.net简约版,龙眼治疗是易行不信的说话的一"/>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_guokr"
+            android:layout_width="120dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/placeholder"/>
+
+    </LinearLayout>
+
+    <!--<LinearLayout
+        android:paddingTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="60dp"
+            android:src="@drawable/ic_menu_manage"
+            android:paddingRight="10dp"
+            />
+
+    </LinearLayout>-->
+
+
+</android.support.v7.widget.CardView>
